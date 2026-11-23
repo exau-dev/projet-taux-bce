@@ -22,5 +22,12 @@ Données publiques issues de l'API du portail de données de la BCE (ECB Data Po
 
 **Point d'attention** : l'€STR n'est publié que les jours ouvrés, alors que le DFR et le MRO sont quotidiens. Les séries seront alignées lors de la préparation des données.
 ## 4. Indicateurs
+| Indicateur | Calcul | Ce qu'il montre |
+|---|---|---|
+| Niveau des taux | Valeur quotidienne de l'€STR, du DFR et du MRO (en %) | L'évolution de la politique monétaire depuis 2019 |
+| Écart €STR – DFR | (€STR − DFR) × 100, en points de base | Si le marché se situe au-dessus ou en dessous du taux plancher de la BCE |
+| Écart moyen par période | Moyenne de l'écart €STR – DFR par mois et par année | Si l'écart est stable ou s'il évolue dans le temps |
+| Réaction aux décisions | Variation de l'€STR autour de chaque date de changement du DFR | La vitesse et l'ampleur de la transmission des décisions au marché |
 
+*1 point de base (pb) = 0,01 point de pourcentage.*
 ## 5. Périmètre
