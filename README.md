@@ -31,3 +31,13 @@ Données publiques issues de l'API du portail de données de la BCE (ECB Data Po
 
 *1 point de base (pb) = 0,01 point de pourcentage.*
 ## 5. Périmètre
+**Inclus**
+- Zone euro, à partir d'octobre 2019 (date de première publication de l'€STR)
+- Trois séries : €STR, taux de la facilité de dépôt (DFR), taux des opérations principales de refinancement (MRO)
+- Données quotidiennes, mises à jour manuellement depuis l'API de la BCE
+
+**Exclu**
+- Autres taux de marché (Euribor, taux longs, courbe des taux)
+- Autres banques centrales (Fed, Banque d'Angleterre…)
+- Prévisions d'évolution des taux
+- Automatisation de la mise à jour des données (prévue dans un projet ultérieur)
