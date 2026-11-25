@@ -5,7 +5,7 @@
 - [x] Cadrage du projet (question métier, utilisateurs, sources, indicateurs, périmètre)
 - [x] Collecte des données brutes (API BCE)
 - [x] Préparation des données (Power Query)
-- [ ] Modélisation et indicateurs (Power BI, DAX)
+- [x] Modélisation et indicateurs (Power BI, DAX)
 - [ ] Tableau de bord et analyse des résultats
 
 ## 1. Question métier
