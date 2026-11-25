@@ -6,8 +6,29 @@
 - [x] Collecte des données brutes (API BCE)
 - [x] Préparation des données (Power Query)
 - [x] Modélisation et indicateurs (Power BI, DAX)
-- [ ] Tableau de bord et analyse des résultats
+- [x] Tableau de bord et analyse des résultats
 
+## Aperçu
+
+![Vue d'ensemble du tableau de bord](docs/vue_ensemble.png)
+
+## Résultats
+
+1. **Une transmission immédiate.** Le 14 septembre 2022, date d'entrée en vigueur de la hausse du DFR (de 0 % à 0,75 %), l'€STR passe de −0,083 % à 0,662 % le jour même.
+2. **Un écart persistant sous le taux plancher.** Sur la période (octobre 2019 – novembre 2026), l'€STR se situe en moyenne **7,5 points de base** sous le DFR.
+3. **Un écart qui se creuse, puis se resserre.**
+
+| Année | 2019* | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026* |
+|---|---|---|---|---|---|---|---|---|
+| Écart moyen (pb) | −4,2 | −4,7 | −6,8 | −8,6 | **−10,0** | −8,9 | −7,8 | −6,6 |
+
+*Années partielles.* L'explication généralement avancée est le niveau d'excès de liquidité : abondante après les injections de la BCE (2020-2022), puis en réduction depuis 2023.
+
+4. **Des effets de fin de période.** Les écarts les plus marqués tombent sur les derniers jours ouvrés de mois et de trimestre (par exemple −12,0 pb le 29 septembre 2023 et −11,8 pb le 29 décembre 2023).
+
+**Méthode** : l'écart est calculé comme la moyenne des écarts quotidiens, sur les seuls jours de publication de l'€STR (mesure DAX `AVERAGEX`). Les résultats ont été vérifiés par un recalcul indépendant à partir des fichiers bruts.
+
+**Limites** : mise à jour manuelle des données ; l'explication par la liquidité est une hypothèse, non testée dans ce projet (elle nécessiterait les données d'excès de liquidité de la BCE).
 ## 1. Question métier
 
 Le taux du marché monétaire en euro (€STR) suit-il fidèlement les décisions de taux de la BCE, et quel écart persiste entre les deux ?
